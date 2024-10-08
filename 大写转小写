@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main (void);
+{
+    char ch;
+    printf("press a key and then press Enter");
+    ch = getchar();
+    ch = ch + 32;
+    putchar(ch);
+    put('\n');
+    return 0
+}

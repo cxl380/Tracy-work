@@ -1,0 +1,15 @@
+＃include <stdio.h>
+int main (void)
+{
+    const double pi = 3.14159
+    double r,circum,area;
+    printf("input r:");
+    scanf("%lf",r");
+    circum = 2*pi*r;
+    area = pi*r*r;
+    printf("printf without width or precision specification");
+    printf("circumference = %f,area = %f\n",circum,area);
+    printf("printf with width and precision specification:");
+    printf("circumference = %7.2f,area =%7.2f\n",circum,area);
+    return 0;
+}

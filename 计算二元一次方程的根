@@ -6,14 +6,15 @@ int main (void)
 {
     float a,b,c,disc,p,q;
     printf("please enter the coefficient a,b,c");
-    scanf("%f,%f,%f",a,b,c);
-    if (faabs(disc)<=EPS)
+    scanf("%f,%f,%f",&a,&b,&c);
+    if (fabs(a)<=EPS)
     {
         printf("It is not a quadratic equation!");
         exitt(0);
     }
     disc = b*b-4*a*c;
-    p = sqrt(fabs(disc))/2*a;
+    p = -b/(2*a);
+    q = sqrt(fabs(disc))/(2*a);
     if (fabs(disc) <= EPS)
     {
         printf("x1 = x2 = %.2222222f\n",p);
@@ -30,7 +31,7 @@ int main (void)
         else
         {
             printf("x1 = %.2f+%.2fi,",p,q);
-            printf("x2 = %.2f-%.2fi,",p,q);
+            printf("x2 = %.2f-%.2fi\n,",p,q);
         }
     }
     return 0;

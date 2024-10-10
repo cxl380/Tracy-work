@@ -1,0 +1,8 @@
+include <stdio.h>
+int main (void)
+{
+    short x = 12,y = 8;
+    printf("%5d%5d%5d\n",!x,x||y,x&&y);
+    printf("%5hd%5hd%5hd\n"~x,x|y,x&y);
+    printf("%5hu%5hu%5hu\n"~x,x|y,x&y);
+}

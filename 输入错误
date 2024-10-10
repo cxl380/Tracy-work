@@ -1,0 +1,17 @@
+＃include <stdio.h>
+int main (void)
+{
+    int a,b,ret;
+    printf("input a,b");
+    ret = scanf("%d,%d",&a,&b);
+    if (ret != 2)
+    {
+        printf("input error");
+    }
+    else
+    {
+        max = a>b ? a : b:
+        printf("max = %d,max");
+    }
+    return 0;
+}

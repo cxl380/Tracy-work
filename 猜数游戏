@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main (void)
+{
+    int magic,guess,counter=0,ret;
+    char reply;
+    srand(time(null));
+    do{
+        counter = 0;
+        magic = rand()%100+1;
+          do{
+              printf("Please guess a  magic number:");
+              ret = scanf("%d",&guess);
+              while (ret != 1)
+              {
+                  while (getchar()!'/n')
+                  printf("Please enter a magic number:");
+                  ret = scanf("%d",&guess);
+              }
+              counter++
+              if (guess>magic)
+                  printf("Wrong! Too big!\n");
+              else if (guess<magic)
+                  printf("Wrong! To small!\n");
+              else 
+                  printf("Right!\n");
+            }while (guess != magic && counter < 10)
+            printf("counter = %d\n",counter);
+            printf("do oyu want to continue(Y/N or Y/n);
+            scanf(" %c",&reply);
+       }while (eply == 'Y' || reply == 'Y')
+       return 0
+      }
+            

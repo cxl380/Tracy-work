@@ -5,7 +5,7 @@ int main (void)
 {
     int magic,guess,counter=0,ret;
     char reply;
-    srand(time(null));
+    srand(time(NULL));
     do{
         counter = 0;
         magic = rand()%100+1;
@@ -14,11 +14,11 @@ int main (void)
               ret = scanf("%d",&guess);
               while (ret != 1)
               {
-                  while (getchar()!'/n')
+                  while (getchar()!='/n')
                   printf("Please enter a magic number:");
                   ret = scanf("%d",&guess);
               }
-              counter++
+              counter++;
               if (guess>magic)
                   printf("Wrong! Too big!\n");
               else if (guess<magic)
@@ -27,9 +27,9 @@ int main (void)
                   printf("Right!\n");
             }while (guess != magic && counter < 10)
             printf("counter = %d\n",counter);
-            printf("do oyu want to continue(Y/N or Y/n);
+            printf("do you want to continue(Y/N or Y/n);
             scanf(" %c",&reply);
-       }while (eply == 'Y' || reply == 'Y')
-       return 0
+       }while (reply == 'Y' || reply == 'Y')
+       return 0;
       }
             
